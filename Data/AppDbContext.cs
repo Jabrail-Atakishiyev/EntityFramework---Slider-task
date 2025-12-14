@@ -1,16 +1,14 @@
-﻿using Entity_framework.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
-namespace Entity_framework.Data
+namespace WebAppPractiece.Data
 {
     public class AppDbContext : DbContext
     {
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options){}
-        
-        public DbSet<Slider> Sliders { get; set; }
-            
-        }
-
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
+        public DbSet<Models.Slider> Sliders { get; set; }
+        public DbSet<Models.SliderDetail> SlidersDetails { get; set; }
+        public DbSet<Models.Product> Products { get; set; }
+        public DbSet<Models.ProductImage> ProductImages { get; set; }
+        public DbSet<Models.Category> Categories { get; set; }
+    }
 }
-
-

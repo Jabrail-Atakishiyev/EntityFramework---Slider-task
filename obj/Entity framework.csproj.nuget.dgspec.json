@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vito\\Desktop\\apa101\\Entity framework\\Entity framework\\Entity framework.csproj": {}
+    "C:\\Users\\Vito\\Desktop\\EntityFramework - Slider task\\Entity framework.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vito\\Desktop\\apa101\\Entity framework\\Entity framework\\Entity framework.csproj": {
+    "C:\\Users\\Vito\\Desktop\\EntityFramework - Slider task\\Entity framework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vito\\Desktop\\apa101\\Entity framework\\Entity framework\\Entity framework.csproj",
+        "projectUniqueName": "C:\\Users\\Vito\\Desktop\\EntityFramework - Slider task\\Entity framework.csproj",
         "projectName": "Entity framework",
-        "projectPath": "C:\\Users\\Vito\\Desktop\\apa101\\Entity framework\\Entity framework\\Entity framework.csproj",
+        "projectPath": "C:\\Users\\Vito\\Desktop\\EntityFramework - Slider task\\Entity framework.csproj",
         "packagesPath": "C:\\Users\\Vito\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vito\\Desktop\\apa101\\Entity framework\\Entity framework\\obj\\",
+        "outputPath": "C:\\Users\\Vito\\Desktop\\EntityFramework - Slider task\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

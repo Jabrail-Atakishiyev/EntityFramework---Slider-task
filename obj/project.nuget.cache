@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K1ONVn5kxOU=",
+  "dgSpecHash": "3YaItYwV/oc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vito\\Desktop\\apa101\\Entity framework\\Entity framework\\Entity framework.csproj",
+  "projectFilePath": "C:\\Users\\Vito\\Desktop\\EntityFramework - Slider task\\Entity framework.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vito\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Vito\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

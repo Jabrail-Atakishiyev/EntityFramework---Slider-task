@@ -1,7 +1,8 @@
-﻿namespace Entity_framework.Models
+﻿namespace WebAppPractiece.Models
 {
     public class BaseEntity
     {
         public int Id { get; set; }
+        public bool IsDeleted { get; set; } = false;
     }
 }

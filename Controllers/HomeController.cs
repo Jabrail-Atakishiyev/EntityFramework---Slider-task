@@ -1,21 +1,39 @@
-using System.Diagnostics;
-using Entity_framework.Data;
-using Entity_framework.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Diagnostics;
+using WebAppPractiece.Data;
+using WebAppPractiece.Models;
+using WebAppPractiece.ViewModels;
 
-namespace Entity_framework.Controllers
+namespace WebAppPractiece.Controllers
 {
     public class HomeController : Controller
     {
         private readonly AppDbContext _context;
+
         public HomeController(AppDbContext context)
         {
             _context = context;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            List<Slider> sliders = _context.Sliders.ToList();
-            return View(sliders);
+            IEnumerable<Slider> sliders = await _context.Sliders.Where(m => !m.IsDeleted).ToListAsync();
+
+            SliderDetail sliderDetail = await _context.SlidersDetails.FirstOrDefaultAsync(m => !m.IsDeleted);
+            IEnumerable<Product> products = await _context.Products
+                .Include(p => p.ProductImages)
+                .Include(p => p.Category)
+                .ToListAsync();
+            IEnumerable<Category> categories = await _context.Categories.Where(m => !m.IsDeleted).ToListAsync();
+
+            HomeVM homeVM = new()
+            {
+                Sliders = sliders,
+                SliderDetail = sliderDetail,
+                Products = products,
+                Categories = categories
+            };
+            return View(homeVM);
         }
     }
 }

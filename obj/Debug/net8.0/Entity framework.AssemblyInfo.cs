@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Entity framework")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c4d35a6b515c9a75188caf4e85fa7277be463de")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4596b056011050e0e450f51bb40cc294ab1e1c90")]
 [assembly: System.Reflection.AssemblyProductAttribute("Entity framework")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Entity framework")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
